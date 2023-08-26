@@ -1,0 +1,336 @@
+
+body{
+    background-color: #0B131E;
+    color: #E7E8EA;
+}
+
+
+
+.nav{
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    width: 5vw;
+    height: 90vh;
+    margin-left: 2vw;
+    background-color: #202B3B;
+}
+.weather div ,.cities div, .map div {
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+
+.nav .icons{
+    font-size: 2vw;
+
+}
+#cloud{
+    color: yellow;
+}
+
+#location{
+    color:rgb(236, 46, 236);
+}
+#re-fresh{
+    color:rgb(231, 226, 213);
+}
+.parent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 90vh;
+    margin-top: 2%;
+    
+}
+.children{
+    display: flex;
+    flex-direction:column;
+}
+.child-1 , .child-2 ,.child-3{
+    width: 60vw;
+    height: 28vh;
+    margin: 1%;
+
+}
+
+.map-section{
+    width: 25vw;
+    background-color: #202B3B;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:2em;
+}
+
+
+
+.child-3{
+    background-color: #202B3B;
+    border-radius: 20px;
+}
+
+.child-2{
+    background-color: #202B3B;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.first,.second,.third{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:30%; 
+   
+}
+
+.first, .second{
+    border-right:2px solid  #0B131E;
+    
+}
+
+.row1,.row2{
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+
+
+
+#city-name{
+    font-size: 4vw;
+}
+
+
+#weather{
+    font-size: 1.3vw;
+
+}
+
+#weather-icon{
+    width: 10vw;
+
+}
+.head{
+    display: flex;
+    justify-content: space-around;
+    
+}
+#temperature{
+    font-size:3vw ;
+    
+
+}
+#temp-min,#temp-max,#real-feel{
+    text-align: center;
+    font-size: 3vw;
+}
+
+.box1,.box2,.box3,.box4{
+ 
+    display: flex;
+    font-size: 1.7vw;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn{
+    background-color: #202B3B;
+    border-style: none;
+    cursor: pointer;
+}
+.font1,.font2{
+     text-align: center; 
+    font-size:1.8vw;
+}
+.font3{
+    text-align: center; 
+    font-size:2vw;
+}
+
+
+
+
+
+@media (max-width:1550px) and (min-width:1000px){
+
+
+    .font1,.font2{
+        font-size:4vh;
+     }
+     .font3{
+         font-size:4vh;
+     }
+     #temp-min, #temp-max , #real-feel{
+      font-size: 4vh;
+     }
+     .box1,.box2,.box3,.box4{
+      font-size: 4vh;
+      
+    }
+    
+    
+    #temperature,#weather,#city-name{
+        font-size: 6vh;
+    }
+    #weather-icon{
+        width: 22vh;
+        height: 17vh;
+    }
+    
+    .weather div ,.cities div, .map div {
+        font-size: 3.5vh;
+      }
+    
+    
+      .nav{
+        
+        width: 13vh;
+        
+    }
+
+
+
+    .map-section{
+        width: 40vh;
+       
+    }
+      
+     
+    
+    }
+    
+        
+
+
+
+
+
+    @media (max-width:999px)   {
+        .parent{
+            flex-direction: column;
+        }
+        .nav{
+            flex-direction: row;
+            width: 90vw;
+            height: 9vh;
+            margin-top:20vh;
+            
+        }
+    
+    
+        .children{
+            flex-direction: row;
+        }
+        .child-1 , .child-2 ,.child-3{
+            width: 90vw;
+            height: 20vh;
+            margin: 2vh;
+        
+        }
+        .child-group{
+            display: flex;
+            flex-direction: column;
+        }
+        .map-section{
+            width: 92vw;
+            margin-bottom: 6vh;
+        }
+    
+        .weather div ,.cities div, .map div {
+          font-size: 3vh;
+        }
+        
+        
+        .nav .icons{
+            font-size: 4vh;
+        
+        }
+        #temperature,#weather,#city-name{
+            font-size: 6vh;
+        }
+        #weather-icon{
+            width: 17vh;
+            height: 15vh;
+        }
+        .font1,.font2{
+          font-size:4vh;
+       }
+       .font3{
+           font-size:4vh;
+       }
+       #temp-min, #temp-max , #real-feel{
+        font-size: 3vh;
+       }
+       .box1,.box2,.box3,.box4{
+        font-size: 4vh;
+        
+    }
+    }
+    
+    
+    
+    
+
+
+
+
+    @media (max-width:767px)  {
+
+        .child-2{
+          flex-direction: column;
+          height: 40vh;
+          margin-top: 8vh;
+        }
+        .first,.second,.third{
+            flex-direction: column;
+            width:90vw; 
+        }
+        .first, .second{
+            border-bottom:2px solid  #0B131E;
+            
+        }
+    
+    
+        .row1,.row2{
+            flex-direction: column; 
+        }
+        .box1,.box2,.box3,.box4{
+            /* font-size: 4vh; */
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    
+      .child-3{
+            height: 50vh;
+        }
+    
+    
+    
+    .nav{
+          
+           margin-top:70vh;
+            
+        } 
+    
+      .map-section{
+        width: 90vw;
+        font-size: 3vh;
+        margin-left: 1.4vh;
+    } 
+    
+    
+    
+    }
+
+
+
